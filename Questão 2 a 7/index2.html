@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questões</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <header class="cabecalho">
+        <h1 class="apresentação">Olá Rethink,</h1>
+        <h3 class="subTitulo">esse menu facilitará a visualização das questões de 2 a 7</h3>
+    </header>
+    <body>
+        <div class="container">
+            <section class="q1">
+                <h2 class="titulo">Buscar pessoa</h2>
+                <input id="input1" type="text" placeholder="insira o nome">
+                <button class="butão" onclick="infoPessoa()">Encontrar</button>
+                <p class="respostas" id="infoInput"></p>
+            </section>
+            <section class="q2">
+                <h2 class="titulo">Confira todos os nomes</h2>
+                <button class="butão" onclick="todosOsNomes()">conferir</button>
+                <p class="respostas" id="todosNomes"></p>
+            </section>
+            <section class="q3">
+                <h2 class="titulo">Confira quem tem idade para dirigir</h2>
+                <button class="butão" onclick="maioresDeIdade()">conferir</button>
+                <p class="respostas" id="maioresIdade"></p>
+            </section>
+            <section class="q4">
+                <h2 class="titulo">Calcular media das idades</h2>
+                <button class="butão" onclick="calcMedia()">Calcular</button>
+                <p class="respostas" id="mediaCalc"></p>
+            </section>
+        </div>
+        <script src="./main2.js"></script>
+    </body>
+</html>

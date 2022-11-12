@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detran</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head>
+    <header class="cabecalho">
+        <img src="./assets/detran-mg-logo-0CA6F6E080-seeklogo.com.png" alt="Logo do Detran MG">
+    </header>
+    <body>
+        <form class="formulario">
+            <legend class="titulo-input">Preencha os dados abaixo</legend>
+            <fieldset>
+                <div class="input-area">
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome Completo" required>
+                    <label class="input-label" for="name">Nome Completo</label>
+                    <span class="mensagem-erro">Campo Inválido</span>                   
+                </div>
+                <div class="input-area">
+                    <input name="idade" id="idade" class="input" type="number" maxlength="2" placeholder="Idade" required>
+                    <label class="input-label" for="name">Idade</label>
+                    <span class="mensagem-erro">Campo Inválido</span>                   
+                </div>
+                <div class="input-area">
+                    <input name="profissão" id="profissão" class="input" type="text" placeholder="Profissão" required>
+                    <label class="input-label" for="profissão">profissão</label>
+                    <span class="mensagem-erro">Campo Inválido</span>                   
+                </div>
+                <div class="input-area">
+                    <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                    <label class="input-label" for="email">email</label>
+                    <span class="mensagem-erro">Campo Inválido</span>                   
+                </div>
+                <div class="input-area">
+                    <input name="telefone" id="telefone" class="input" type="tel" placeholder="Telefone" required>
+                    <label class="input-label" for="telefone">Telefone</label>
+                    <span class="mensagem-erro">Campo Inválido</span>                   
+                </div>
+                <div class="input-area">
+                    <input name="data" id="data" class="input" type="date" placeholder="Data de Preenchimento" required>
+                    <label class="input-label" for="data">Data de Preenchimento</label>
+                    <span class="mensagem-erro">Campo Inválido</span>                   
+                </div>
+            </fieldset>
+            <button class="botao" onclick="recebeDados()">Cadastrar</a>
+        </form>
+        
+        <script src="./main.js"></script>
+    </body>
+</html>
